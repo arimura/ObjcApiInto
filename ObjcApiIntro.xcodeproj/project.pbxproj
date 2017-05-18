@@ -16,6 +16,8 @@
 		76DC6FB71ECD4F050013ACA4 /* ObjcApiIntroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FB61ECD4F050013ACA4 /* ObjcApiIntroTests.m */; };
 		76DC6FC21ECD4F050013ACA4 /* ObjcApiIntroUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FC11ECD4F050013ACA4 /* ObjcApiIntroUITests.m */; };
 		76DC6FD31ECD7EB70013ACA4 /* Hoge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FD21ECD7EB70013ACA4 /* Hoge.swift */; };
+		76DC6FD71ECD8CD00013ACA4 /* HogeClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FD61ECD8CD00013ACA4 /* HogeClient.m */; };
+		76DC6FDA1ECD8EA60013ACA4 /* HogeClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FD91ECD8EA60013ACA4 /* HogeClientTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		76DC6FC11ECD4F050013ACA4 /* ObjcApiIntroUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcApiIntroUITests.m; sourceTree = "<group>"; };
 		76DC6FC31ECD4F050013ACA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76DC6FD21ECD7EB70013ACA4 /* Hoge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hoge.swift; sourceTree = "<group>"; };
+		76DC6FD61ECD8CD00013ACA4 /* HogeClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HogeClient.m; sourceTree = "<group>"; };
+		76DC6FD81ECD8CE10013ACA4 /* HogeClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HogeClient.h; sourceTree = "<group>"; };
+		76DC6FD91ECD8EA60013ACA4 /* HogeClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HogeClientTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,8 @@
 				76DC6FA01ECD4F040013ACA4 /* AppDelegate.m */,
 				76DC6FA21ECD4F040013ACA4 /* ViewController.h */,
 				76DC6FA31ECD4F040013ACA4 /* ViewController.m */,
+				76DC6FD81ECD8CE10013ACA4 /* HogeClient.h */,
+				76DC6FD61ECD8CD00013ACA4 /* HogeClient.m */,
 				76DC6FD21ECD7EB70013ACA4 /* Hoge.swift */,
 				76DC6FA51ECD4F040013ACA4 /* Main.storyboard */,
 				76DC6FA81ECD4F040013ACA4 /* Assets.xcassets */,
@@ -130,6 +137,7 @@
 			children = (
 				76DC6FB61ECD4F050013ACA4 /* ObjcApiIntroTests.m */,
 				76DC6FB81ECD4F050013ACA4 /* Info.plist */,
+				76DC6FD91ECD8EA60013ACA4 /* HogeClientTests.m */,
 			);
 			path = ObjcApiIntroTests;
 			sourceTree = "<group>";
@@ -282,6 +290,7 @@
 			files = (
 				76DC6FD31ECD7EB70013ACA4 /* Hoge.swift in Sources */,
 				76DC6FA41ECD4F040013ACA4 /* ViewController.m in Sources */,
+				76DC6FD71ECD8CD00013ACA4 /* HogeClient.m in Sources */,
 				76DC6FA11ECD4F040013ACA4 /* AppDelegate.m in Sources */,
 				76DC6F9E1ECD4F040013ACA4 /* main.m in Sources */,
 			);
@@ -292,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76DC6FB71ECD4F050013ACA4 /* ObjcApiIntroTests.m in Sources */,
+				76DC6FDA1ECD8EA60013ACA4 /* HogeClientTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

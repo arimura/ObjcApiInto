@@ -7,8 +7,8 @@
 
 import Foundation
 
-public class Hoge {
-  func getName() -> String {
+@objc public class Hoge: NSObject {
+  public func getName() -> String {
     return "Hoge"
   }
 }
