@@ -15,6 +15,7 @@
 		76DC6FAC1ECD4F040013ACA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76DC6FAA1ECD4F040013ACA4 /* LaunchScreen.storyboard */; };
 		76DC6FB71ECD4F050013ACA4 /* ObjcApiIntroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FB61ECD4F050013ACA4 /* ObjcApiIntroTests.m */; };
 		76DC6FC21ECD4F050013ACA4 /* ObjcApiIntroUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FC11ECD4F050013ACA4 /* ObjcApiIntroUITests.m */; };
+		76DC6FD31ECD7EB70013ACA4 /* Hoge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FD21ECD7EB70013ACA4 /* Hoge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		76DC6FBD1ECD4F050013ACA4 /* ObjcApiIntroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcApiIntroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DC6FC11ECD4F050013ACA4 /* ObjcApiIntroUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcApiIntroUITests.m; sourceTree = "<group>"; };
 		76DC6FC31ECD4F050013ACA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76DC6FD21ECD7EB70013ACA4 /* Hoge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hoge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				76DC6FA01ECD4F040013ACA4 /* AppDelegate.m */,
 				76DC6FA21ECD4F040013ACA4 /* ViewController.h */,
 				76DC6FA31ECD4F040013ACA4 /* ViewController.m */,
+				76DC6FD21ECD7EB70013ACA4 /* Hoge.swift */,
 				76DC6FA51ECD4F040013ACA4 /* Main.storyboard */,
 				76DC6FA81ECD4F040013ACA4 /* Assets.xcassets */,
 				76DC6FAA1ECD4F040013ACA4 /* LaunchScreen.storyboard */,
@@ -208,6 +211,7 @@
 					76DC6F981ECD4F040013ACA4 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 647UF2GQJ5;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					76DC6FB11ECD4F050013ACA4 = {
@@ -276,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76DC6FD31ECD7EB70013ACA4 /* Hoge.swift in Sources */,
 				76DC6FA41ECD4F040013ACA4 /* ViewController.m in Sources */,
 				76DC6FA11ECD4F040013ACA4 /* AppDelegate.m in Sources */,
 				76DC6F9E1ECD4F040013ACA4 /* main.m in Sources */,
@@ -425,11 +430,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 647UF2GQJ5;
 				INFOPLIST_FILE = ObjcApiIntro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hormiga6.ObjcApiIntro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -437,17 +445,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 647UF2GQJ5;
 				INFOPLIST_FILE = ObjcApiIntro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hormiga6.ObjcApiIntro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		76DC6FCA1ECD4F050013ACA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 647UF2GQJ5;
 				INFOPLIST_FILE = ObjcApiIntroTests/Info.plist;
@@ -461,6 +472,7 @@
 		76DC6FCB1ECD4F050013ACA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 647UF2GQJ5;
 				INFOPLIST_FILE = ObjcApiIntroTests/Info.plist;
@@ -474,6 +486,7 @@
 		76DC6FCD1ECD4F050013ACA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 647UF2GQJ5;
 				INFOPLIST_FILE = ObjcApiIntroUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -486,6 +499,7 @@
 		76DC6FCE1ECD4F050013ACA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 647UF2GQJ5;
 				INFOPLIST_FILE = ObjcApiIntroUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -514,6 +528,7 @@
 				76DC6FC81ECD4F050013ACA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76DC6FC91ECD4F050013ACA4 /* Build configuration list for PBXNativeTarget "ObjcApiIntroTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +537,7 @@
 				76DC6FCB1ECD4F050013ACA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76DC6FCC1ECD4F050013ACA4 /* Build configuration list for PBXNativeTarget "ObjcApiIntroUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +546,7 @@
 				76DC6FCE1ECD4F050013ACA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
