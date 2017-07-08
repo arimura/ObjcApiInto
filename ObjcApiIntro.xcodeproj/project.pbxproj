@@ -13,7 +13,6 @@
 		76DC6FA71ECD4F040013ACA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76DC6FA51ECD4F040013ACA4 /* Main.storyboard */; };
 		76DC6FA91ECD4F040013ACA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DC6FA81ECD4F040013ACA4 /* Assets.xcassets */; };
 		76DC6FAC1ECD4F040013ACA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76DC6FAA1ECD4F040013ACA4 /* LaunchScreen.storyboard */; };
-		76DC6FB71ECD4F050013ACA4 /* ObjcApiIntroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FB61ECD4F050013ACA4 /* ObjcApiIntroTests.m */; };
 		76DC6FC21ECD4F050013ACA4 /* ObjcApiIntroUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FC11ECD4F050013ACA4 /* ObjcApiIntroUITests.m */; };
 		76DC6FD31ECD7EB70013ACA4 /* Hoge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FD21ECD7EB70013ACA4 /* Hoge.swift */; };
 		76DC6FD71ECD8CD00013ACA4 /* HogeClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FD61ECD8CD00013ACA4 /* HogeClient.m */; };
@@ -49,7 +48,6 @@
 		76DC6FAB1ECD4F040013ACA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76DC6FAD1ECD4F040013ACA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76DC6FB21ECD4F050013ACA4 /* ObjcApiIntroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcApiIntroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		76DC6FB61ECD4F050013ACA4 /* ObjcApiIntroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcApiIntroTests.m; sourceTree = "<group>"; };
 		76DC6FB81ECD4F050013ACA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76DC6FBD1ECD4F050013ACA4 /* ObjcApiIntroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcApiIntroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DC6FC11ECD4F050013ACA4 /* ObjcApiIntroUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcApiIntroUITests.m; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 		76DC6FB51ECD4F050013ACA4 /* ObjcApiIntroTests */ = {
 			isa = PBXGroup;
 			children = (
-				76DC6FB61ECD4F050013ACA4 /* ObjcApiIntroTests.m */,
 				76DC6FB81ECD4F050013ACA4 /* Info.plist */,
 				76DC6FD91ECD8EA60013ACA4 /* HogeClientTests.m */,
 			);
@@ -300,7 +297,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76DC6FB71ECD4F050013ACA4 /* ObjcApiIntroTests.m in Sources */,
 				76DC6FDA1ECD8EA60013ACA4 /* HogeClientTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
