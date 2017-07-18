@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		74523A0A1F1E153C0072A571 /* UIApiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74523A091F1E153C0072A571 /* UIApiViewController.m */; };
+		74523A0D1F1E52140072A571 /* LayoutSampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74523A0C1F1E52140072A571 /* LayoutSampleView.m */; };
 		76DC6F9E1ECD4F040013ACA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6F9D1ECD4F040013ACA4 /* main.m */; };
 		76DC6FA11ECD4F040013ACA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FA01ECD4F040013ACA4 /* AppDelegate.m */; };
 		76DC6FA41ECD4F040013ACA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FA31ECD4F040013ACA4 /* ViewController.m */; };
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		74523A081F1E153C0072A571 /* UIApiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIApiViewController.h; sourceTree = "<group>"; };
 		74523A091F1E153C0072A571 /* UIApiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIApiViewController.m; sourceTree = "<group>"; };
+		74523A0B1F1E52140072A571 /* LayoutSampleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutSampleView.h; sourceTree = "<group>"; };
+		74523A0C1F1E52140072A571 /* LayoutSampleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutSampleView.m; sourceTree = "<group>"; };
 		76DC6F991ECD4F040013ACA4 /* ObjcApiIntro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcApiIntro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DC6F9D1ECD4F040013ACA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		76DC6F9F1ECD4F040013ACA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				76DC6FD81ECD8CE10013ACA4 /* HogeClient.h */,
 				76DC6FD61ECD8CD00013ACA4 /* HogeClient.m */,
 				76DC6FD21ECD7EB70013ACA4 /* Hoge.swift */,
+				74523A0B1F1E52140072A571 /* LayoutSampleView.h */,
+				74523A0C1F1E52140072A571 /* LayoutSampleView.m */,
 				76DC6FA51ECD4F040013ACA4 /* Main.storyboard */,
 				76DC6FA81ECD4F040013ACA4 /* Assets.xcassets */,
 				76DC6FAA1ECD4F040013ACA4 /* LaunchScreen.storyboard */,
@@ -294,6 +299,7 @@
 				76DC6FA41ECD4F040013ACA4 /* ViewController.m in Sources */,
 				76DC6FD71ECD8CD00013ACA4 /* HogeClient.m in Sources */,
 				76DC6FA11ECD4F040013ACA4 /* AppDelegate.m in Sources */,
+				74523A0D1F1E52140072A571 /* LayoutSampleView.m in Sources */,
 				76DC6F9E1ECD4F040013ACA4 /* main.m in Sources */,
 				74523A0A1F1E153C0072A571 /* UIApiViewController.m in Sources */,
 			);

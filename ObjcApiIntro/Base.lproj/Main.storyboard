@@ -77,8 +77,20 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.39977316588501854" green="1" blue="0.23063521187359082" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="reg-rZ-vb9" customClass="LayoutSampleView">
+                                <rect key="frame" x="162" y="607" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0hV-lp-2j8"/>
+                                    <constraint firstAttribute="width" constant="50" id="5Mk-dX-gb3"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="reg-rZ-vb9" firstAttribute="centerX" secondItem="H6B-ZX-x31" secondAttribute="centerX" id="ltp-hx-5Zp"/>
+                            <constraint firstItem="LPc-CA-Emx" firstAttribute="top" secondItem="reg-rZ-vb9" secondAttribute="bottom" constant="10" id="sKP-8v-lCD"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="greeView" destination="n6V-HC-iw9" id="gAq-H7-QVv"/>
