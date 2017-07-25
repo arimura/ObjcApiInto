@@ -13,7 +13,7 @@
 
 @implementation RequestOpTests
 
-- (void)testSyncRequest {
+- (void)testRequestWithDependency {
     NSBlockOperation *lastOp = [NSBlockOperation blockOperationWithBlock:^{
         NSLog(@"done lastOp");
     }];
