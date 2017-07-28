@@ -18,6 +18,11 @@ typedef NS_ENUM(NSInteger, Type) {
     T_FUGA
 };
 
+typedef NS_OPTIONS(NSUInteger, OpType){
+    OT_HOGE,
+    OT_FUGA
+};
+
 @implementation EnumTests
 
 - (void)testMonth {
@@ -28,5 +33,10 @@ typedef NS_ENUM(NSInteger, Type) {
 -(void)testType {
     Type t = T_FUGA;
     XCTAssertEqual(t, 2);
+}
+
+- (void)testOpType {
+    printf("OP_HOGE is %#08x\n", OT_HOGE);
+    printf("OP_FUGA is %#08x\n", OT_FUGA);
 }
 @end
