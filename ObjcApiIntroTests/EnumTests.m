@@ -1,0 +1,32 @@
+//
+//  EnumTests.m
+//  ObjcApiIntro
+//
+//  Created by 有村 皓太郎 on 2017/07/28.
+//  Copyright © 2017年 hormiga6. All rights reserved.
+//
+
+#import <XCTest/XCTest.h>
+
+@interface EnumTests : XCTestCase
+@end
+
+enum month {JAN =1, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC, };
+
+typedef NS_ENUM(NSInteger, Type) {
+    T_HOGE = 1,
+    T_FUGA
+};
+
+@implementation EnumTests
+
+- (void)testMonth {
+    enum month j = JAN;
+    printf("JAN is %d\n", j);
+}
+
+-(void)testType {
+    Type t = T_FUGA;
+    XCTAssertEqual(t, 2);
+}
+@end

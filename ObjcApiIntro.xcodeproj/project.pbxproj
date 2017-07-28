@@ -13,6 +13,7 @@
 		744415BC1F26CFF300DE53A5 /* RequestOpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 744415BB1F26CFF300DE53A5 /* RequestOpTests.m */; };
 		74523A0A1F1E153C0072A571 /* UIApiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74523A091F1E153C0072A571 /* UIApiViewController.m */; };
 		74523A0D1F1E52140072A571 /* LayoutSampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74523A0C1F1E52140072A571 /* LayoutSampleView.m */; };
+		7474BA6E1F2AF0160046EEF4 /* EnumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7474BA6D1F2AF0160046EEF4 /* EnumTests.m */; };
 		74A44E3C1F2ADEB600177694 /* TypedefTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A44E3B1F2ADEB600177694 /* TypedefTests.m */; };
 		76DC6F9E1ECD4F040013ACA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6F9D1ECD4F040013ACA4 /* main.m */; };
 		76DC6FA11ECD4F040013ACA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FA01ECD4F040013ACA4 /* AppDelegate.m */; };
@@ -54,6 +55,7 @@
 		74523A091F1E153C0072A571 /* UIApiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIApiViewController.m; sourceTree = "<group>"; };
 		74523A0B1F1E52140072A571 /* LayoutSampleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutSampleView.h; sourceTree = "<group>"; };
 		74523A0C1F1E52140072A571 /* LayoutSampleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutSampleView.m; sourceTree = "<group>"; };
+		7474BA6D1F2AF0160046EEF4 /* EnumTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnumTests.m; sourceTree = "<group>"; };
 		74A44E3B1F2ADEB600177694 /* TypedefTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypedefTests.m; sourceTree = "<group>"; };
 		76DC6F991ECD4F040013ACA4 /* ObjcApiIntro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcApiIntro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DC6F9D1ECD4F040013ACA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				743CB9CB1F2190310035EE71 /* PropertiesDumpTests.m */,
 				744415BB1F26CFF300DE53A5 /* RequestOpTests.m */,
 				74A44E3B1F2ADEB600177694 /* TypedefTests.m */,
+				7474BA6D1F2AF0160046EEF4 /* EnumTests.m */,
 			);
 			path = ObjcApiIntroTests;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7474BA6E1F2AF0160046EEF4 /* EnumTests.m in Sources */,
 				743CB9CC1F2190310035EE71 /* PropertiesDumpTests.m in Sources */,
 				74A44E3C1F2ADEB600177694 /* TypedefTests.m in Sources */,
 				76DC6FDA1ECD8EA60013ACA4 /* HogeClientTests.m in Sources */,
