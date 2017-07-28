@@ -12,7 +12,7 @@
 
 typedef int Length;
 
-typedef char *String;
+typedef char *String;
 
 typedef struct tnode *Treeptr;
 
