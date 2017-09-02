@@ -27,6 +27,22 @@
 + (void)printInheritTree:(id)obj index:(int)index;
 @end
 
+@protocol Foo <NSObject>
+- (void)bar;
+@end
+
+@interface Facade : NSObject<Foo>
+@property (nonatomic) id delegate;
+@end
+@implementation Facade
+- (id)forwardingTargetForSelector:(SEL)aSelector{
+    return _delegate;
+}
+- (void)bar {
+    NSLog(@"bar!");
+}
+@end
+
 @implementation RuntimeTests
 + (void)printInheritTree:(id)obj index:(int)index{
     NSString *indent = [@"" stringByPaddingToLength:index withString:@" " startingAtIndex:0];
@@ -56,5 +72,63 @@
 - (void)testClass {
     HRMGHoge *hoge = [[HRMGHoge alloc]init];
     [RuntimeTests printInheritTree:hoge index:0];
+}
+
+- (void)testSendMessage{
+    id obj = @"hoge";
+    SEL sel = NSSelectorFromString(@"substringFromIndex:");
+    IMP imp = [obj methodForSelector:sel];
+    NSString *sub = ((id(*)(id, SEL, NSInteger))imp)(obj,sel,1);
+    XCTAssertEqualObjects(@"oge", sub);
+}
+
+- (void)testFindClass{
+    Class uiview = NSClassFromString(@"UIView");
+    if(Nil == uiview) {
+        NSLog(@"Not linked");
+    }else{
+        id view = [UIView new];
+        NSLog(@"View: %@", view);
+    }
+}
+
+- (void)testFacade{
+    Facade *facade = [Facade new];
+    facade.delegate = [NSMutableArray array];
+    [facade performSelector:@selector(addObject:) withObject:@"hoge"];
+    XCTAssertEqualObjects(@"hoge", facade.delegate[0]);
+    
+}
+
+- (void)testCountClass{
+    NSMutableArray *classes = [NSMutableArray array];
+    int classCount = objc_getClassList(NULL, 0);
+    Class *classList = (Class*)calloc(classCount, sizeof(Class));
+    objc_getClassList(classList, classCount);
+    for (int i = 0; i <classCount; i++){
+        [classes addObject:NSStringFromClass(classList[i])];
+    }
+    free(classList);
+    [classes sortedArrayUsingSelector:@selector(compare:)];
+    NSLog(@"%@", classes);
+}
+
+- (void)testClassTree {
+    NSString *className = @"NSString";
+    const char *name = [className UTF8String];
+    printf("%s \n\tIvars: \n", name);
+    Class cls = NSClassFromString(className);
+    unsigned int ivarCount;
+    Ivar *ivars = class_copyIvarList(cls, &ivarCount);
+    for(unsigned int i = 0; i < ivarCount; i++){
+        printf("\t\t%s\n", ivar_getName(ivars[i]));
+    }
+    free(ivars);
+    unsigned int methodCount;
+    Method *methods = class_copyMethodList(cls, &methodCount);
+    printf("%s\n\tMethods:\n", name);
+    for (unsigned int i=0; i<methodCount; i++){
+        printf("\t\t%s\n",sel_getName(method_getName(methods[i])));
+    }
 }
 @end
