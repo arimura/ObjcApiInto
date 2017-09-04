@@ -10,6 +10,7 @@
 		2E0345380F505DC62FD7924E /* Pods_ObjcApiIntroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3E7C0DC21EF4FDD991E1B0 /* Pods_ObjcApiIntroUITests.framework */; };
 		743892611F579CA300EBBEC6 /* DynamicTypingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 743892601F579CA300EBBEC6 /* DynamicTypingTest.m */; };
 		7438926D1F59BC3B00EBBEC6 /* KeyValueCodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7438926C1F59BC3B00EBBEC6 /* KeyValueCodingTests.m */; };
+		7438926F1F5CFDE000EBBEC6 /* MemoryManagementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7438926E1F5CFDE000EBBEC6 /* MemoryManagementTests.m */; };
 		743CB9C81F1F93080035EE71 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743CB9C71F1F93080035EE71 /* AVFoundation.framework */; };
 		743CB9CC1F2190310035EE71 /* PropertiesDumpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 743CB9CB1F2190310035EE71 /* PropertiesDumpTests.m */; };
 		744415BC1F26CFF300DE53A5 /* RequestOpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 744415BB1F26CFF300DE53A5 /* RequestOpTests.m */; };
@@ -53,6 +54,7 @@
 		3FCAB5C2CE47921D718308CF /* Pods-ObjcApiIntro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcApiIntro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjcApiIntro/Pods-ObjcApiIntro.debug.xcconfig"; sourceTree = "<group>"; };
 		743892601F579CA300EBBEC6 /* DynamicTypingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTypingTest.m; sourceTree = "<group>"; };
 		7438926C1F59BC3B00EBBEC6 /* KeyValueCodingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueCodingTests.m; sourceTree = "<group>"; };
+		7438926E1F5CFDE000EBBEC6 /* MemoryManagementTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryManagementTests.m; sourceTree = "<group>"; };
 		743CB9C71F1F93080035EE71 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		743CB9CB1F2190310035EE71 /* PropertiesDumpTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertiesDumpTests.m; sourceTree = "<group>"; };
 		744415BB1F26CFF300DE53A5 /* RequestOpTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestOpTests.m; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				7474BA6F1F2B0C3F0046EEF4 /* RuntimeTests.m */,
 				743892601F579CA300EBBEC6 /* DynamicTypingTest.m */,
 				7438926C1F59BC3B00EBBEC6 /* KeyValueCodingTests.m */,
+				7438926E1F5CFDE000EBBEC6 /* MemoryManagementTests.m */,
 			);
 			path = ObjcApiIntroTests;
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 				7474BA701F2B0C3F0046EEF4 /* RuntimeTests.m in Sources */,
 				74A44E3C1F2ADEB600177694 /* TypedefTests.m in Sources */,
 				743892611F579CA300EBBEC6 /* DynamicTypingTest.m in Sources */,
+				7438926F1F5CFDE000EBBEC6 /* MemoryManagementTests.m in Sources */,
 				7438926D1F59BC3B00EBBEC6 /* KeyValueCodingTests.m in Sources */,
 				76DC6FDA1ECD8EA60013ACA4 /* HogeClientTests.m in Sources */,
 				744415BC1F26CFF300DE53A5 /* RequestOpTests.m in Sources */,
