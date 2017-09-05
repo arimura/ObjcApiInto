@@ -305,19 +305,19 @@
 				TargetAttributes = {
 					76DC6F981ECD4F040013ACA4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 647UF2GQJ5;
+						DevelopmentTeam = 5957UHEQ5V;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					76DC6FB11ECD4F050013ACA4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 647UF2GQJ5;
+						DevelopmentTeam = 5957UHEQ5V;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 76DC6F981ECD4F040013ACA4;
 					};
 					76DC6FBC1ECD4F050013ACA4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 647UF2GQJ5;
+						DevelopmentTeam = 5957UHEQ5V;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 76DC6F981ECD4F040013ACA4;
 					};
@@ -679,7 +679,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 647UF2GQJ5;
+				DEVELOPMENT_TEAM = 5957UHEQ5V;
 				INFOPLIST_FILE = ObjcApiIntro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hormiga6.ObjcApiIntro;
@@ -696,7 +696,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 647UF2GQJ5;
+				DEVELOPMENT_TEAM = 5957UHEQ5V;
 				INFOPLIST_FILE = ObjcApiIntro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hormiga6.ObjcApiIntro;
@@ -711,7 +711,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 647UF2GQJ5;
+				DEVELOPMENT_TEAM = 5957UHEQ5V;
 				INFOPLIST_FILE = ObjcApiIntroTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hormiga6.ObjcApiIntroTests;
@@ -726,7 +726,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 647UF2GQJ5;
+				DEVELOPMENT_TEAM = 5957UHEQ5V;
 				INFOPLIST_FILE = ObjcApiIntroTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hormiga6.ObjcApiIntroTests;
@@ -740,7 +740,7 @@
 			baseConfigurationReference = B9D132EE91C70449E927266A /* Pods-ObjcApiIntroUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 647UF2GQJ5;
+				DEVELOPMENT_TEAM = 5957UHEQ5V;
 				INFOPLIST_FILE = ObjcApiIntroUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hormiga6.ObjcApiIntroUITests;
@@ -754,7 +754,7 @@
 			baseConfigurationReference = BAB14171E6891464E9DCA7A1 /* Pods-ObjcApiIntroUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 647UF2GQJ5;
+				DEVELOPMENT_TEAM = 5957UHEQ5V;
 				INFOPLIST_FILE = ObjcApiIntroUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hormiga6.ObjcApiIntroUITests;
