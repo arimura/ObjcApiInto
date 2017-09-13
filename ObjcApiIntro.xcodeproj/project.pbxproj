@@ -17,6 +17,7 @@
 		744415BC1F26CFF300DE53A5 /* RequestOpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 744415BB1F26CFF300DE53A5 /* RequestOpTests.m */; };
 		74523A0A1F1E153C0072A571 /* UIApiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74523A091F1E153C0072A571 /* UIApiViewController.m */; };
 		74523A0D1F1E52140072A571 /* LayoutSampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74523A0C1F1E52140072A571 /* LayoutSampleView.m */; };
+		745A3C931F627A5A00FB1F03 /* BlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 745A3C921F627A5A00FB1F03 /* BlockTests.m */; };
 		7474BA6E1F2AF0160046EEF4 /* EnumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7474BA6D1F2AF0160046EEF4 /* EnumTests.m */; };
 		7474BA701F2B0C3F0046EEF4 /* RuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7474BA6F1F2B0C3F0046EEF4 /* RuntimeTests.m */; };
 		74A44E3C1F2ADEB600177694 /* TypedefTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A44E3B1F2ADEB600177694 /* TypedefTests.m */; };
@@ -64,6 +65,7 @@
 		74523A091F1E153C0072A571 /* UIApiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIApiViewController.m; sourceTree = "<group>"; };
 		74523A0B1F1E52140072A571 /* LayoutSampleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutSampleView.h; sourceTree = "<group>"; };
 		74523A0C1F1E52140072A571 /* LayoutSampleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutSampleView.m; sourceTree = "<group>"; };
+		745A3C921F627A5A00FB1F03 /* BlockTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTests.m; sourceTree = "<group>"; };
 		7474BA6D1F2AF0160046EEF4 /* EnumTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnumTests.m; sourceTree = "<group>"; };
 		7474BA6F1F2B0C3F0046EEF4 /* RuntimeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeTests.m; sourceTree = "<group>"; };
 		74A44E3B1F2ADEB600177694 /* TypedefTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypedefTests.m; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				7438926C1F59BC3B00EBBEC6 /* KeyValueCodingTests.m */,
 				7438926E1F5CFDE000EBBEC6 /* MemoryManagementTests.m */,
 				743892721F5D472800EBBEC6 /* SortTests.m */,
+				745A3C921F627A5A00FB1F03 /* BlockTests.m */,
 			);
 			path = ObjcApiIntroTests;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				7474BA701F2B0C3F0046EEF4 /* RuntimeTests.m in Sources */,
 				74A44E3C1F2ADEB600177694 /* TypedefTests.m in Sources */,
 				743892611F579CA300EBBEC6 /* DynamicTypingTest.m in Sources */,
+				745A3C931F627A5A00FB1F03 /* BlockTests.m in Sources */,
 				743892731F5D472800EBBEC6 /* SortTests.m in Sources */,
 				7438926F1F5CFDE000EBBEC6 /* MemoryManagementTests.m in Sources */,
 				7438926D1F59BC3B00EBBEC6 /* KeyValueCodingTests.m in Sources */,
