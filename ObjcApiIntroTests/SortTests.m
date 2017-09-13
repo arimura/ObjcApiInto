@@ -55,6 +55,9 @@
     XCTAssertEqual(1, sorted[0].hoge.order);
     XCTAssertEqual(2, sorted[1].hoge.order);
     XCTAssertEqual(3, sorted[2].hoge.order);
+    
+    NSMutableArray *arraya = nil;
+    [arraya objectAtIndex:0];
 }
 
 @end
