@@ -22,6 +22,7 @@
 		745A3C931F627A5A00FB1F03 /* BlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 745A3C921F627A5A00FB1F03 /* BlockTests.m */; };
 		7474BA6E1F2AF0160046EEF4 /* EnumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7474BA6D1F2AF0160046EEF4 /* EnumTests.m */; };
 		7474BA701F2B0C3F0046EEF4 /* RuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7474BA6F1F2B0C3F0046EEF4 /* RuntimeTests.m */; };
+		747A0EC81FB93A1000A1B78A /* OCMockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 747A0EC71FB93A1000A1B78A /* OCMockTests.m */; };
 		74A44E3C1F2ADEB600177694 /* TypedefTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A44E3B1F2ADEB600177694 /* TypedefTests.m */; };
 		76DC6F9E1ECD4F040013ACA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6F9D1ECD4F040013ACA4 /* main.m */; };
 		76DC6FA11ECD4F040013ACA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FA01ECD4F040013ACA4 /* AppDelegate.m */; };
@@ -72,6 +73,7 @@
 		745A3C921F627A5A00FB1F03 /* BlockTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTests.m; sourceTree = "<group>"; };
 		7474BA6D1F2AF0160046EEF4 /* EnumTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnumTests.m; sourceTree = "<group>"; };
 		7474BA6F1F2B0C3F0046EEF4 /* RuntimeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeTests.m; sourceTree = "<group>"; };
+		747A0EC71FB93A1000A1B78A /* OCMockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMockTests.m; sourceTree = "<group>"; };
 		74A44E3B1F2ADEB600177694 /* TypedefTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypedefTests.m; sourceTree = "<group>"; };
 		76DC6F991ECD4F040013ACA4 /* ObjcApiIntro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcApiIntro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DC6F9D1ECD4F040013ACA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				745A3C921F627A5A00FB1F03 /* BlockTests.m */,
 				744C02321F71594A003AD004 /* CopyTests.m */,
 				740D87DA1FA393CA009FA424 /* FunctionPointerTests.m */,
+				747A0EC71FB93A1000A1B78A /* OCMockTests.m */,
 			);
 			path = ObjcApiIntroTests;
 			sourceTree = "<group>";
@@ -386,9 +389,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ObjcApiIntroTests/Pods-ObjcApiIntroTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OCMock/OCMock.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCMock.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -551,6 +557,7 @@
 				744C02331F71594A003AD004 /* CopyTests.m in Sources */,
 				740D87DB1FA393CA009FA424 /* FunctionPointerTests.m in Sources */,
 				7474BA6E1F2AF0160046EEF4 /* EnumTests.m in Sources */,
+				747A0EC81FB93A1000A1B78A /* OCMockTests.m in Sources */,
 				743CB9CC1F2190310035EE71 /* PropertiesDumpTests.m in Sources */,
 				7474BA701F2B0C3F0046EEF4 /* RuntimeTests.m in Sources */,
 				74A44E3C1F2ADEB600177694 /* TypedefTests.m in Sources */,

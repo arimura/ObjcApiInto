@@ -10,6 +10,7 @@ target 'ObjcApiIntro' do
 
   target 'ObjcApiIntroTests' do
     inherit! :search_paths
+    pod 'OCMock'
     # Pods for testing
   end
 
