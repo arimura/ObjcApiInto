@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2E0345380F505DC62FD7924E /* Pods_ObjcApiIntroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3E7C0DC21EF4FDD991E1B0 /* Pods_ObjcApiIntroUITests.framework */; };
 		740D87DB1FA393CA009FA424 /* FunctionPointerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 740D87DA1FA393CA009FA424 /* FunctionPointerTests.m */; };
+		741DFE02204E33AE005BF970 /* SqliteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741DFE01204E33AE005BF970 /* SqliteTests.m */; };
 		743892611F579CA300EBBEC6 /* DynamicTypingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 743892601F579CA300EBBEC6 /* DynamicTypingTest.m */; };
 		7438926D1F59BC3B00EBBEC6 /* KeyValueCodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7438926C1F59BC3B00EBBEC6 /* KeyValueCodingTests.m */; };
 		7438926F1F5CFDE000EBBEC6 /* MemoryManagementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7438926E1F5CFDE000EBBEC6 /* MemoryManagementTests.m */; };
@@ -58,6 +59,7 @@
 /* Begin PBXFileReference section */
 		3FCAB5C2CE47921D718308CF /* Pods-ObjcApiIntro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcApiIntro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjcApiIntro/Pods-ObjcApiIntro.debug.xcconfig"; sourceTree = "<group>"; };
 		740D87DA1FA393CA009FA424 /* FunctionPointerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionPointerTests.m; sourceTree = "<group>"; };
+		741DFE01204E33AE005BF970 /* SqliteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqliteTests.m; sourceTree = "<group>"; };
 		743892601F579CA300EBBEC6 /* DynamicTypingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTypingTest.m; sourceTree = "<group>"; };
 		7438926C1F59BC3B00EBBEC6 /* KeyValueCodingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueCodingTests.m; sourceTree = "<group>"; };
 		7438926E1F5CFDE000EBBEC6 /* MemoryManagementTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryManagementTests.m; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				744C02321F71594A003AD004 /* CopyTests.m */,
 				740D87DA1FA393CA009FA424 /* FunctionPointerTests.m */,
 				747A0EC71FB93A1000A1B78A /* OCMockTests.m */,
+				741DFE01204E33AE005BF970 /* SqliteTests.m */,
 			);
 			path = ObjcApiIntroTests;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 				7438926D1F59BC3B00EBBEC6 /* KeyValueCodingTests.m in Sources */,
 				76DC6FDA1ECD8EA60013ACA4 /* HogeClientTests.m in Sources */,
 				744415BC1F26CFF300DE53A5 /* RequestOpTests.m in Sources */,
+				741DFE02204E33AE005BF970 /* SqliteTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
