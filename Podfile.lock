@@ -6,10 +6,15 @@ DEPENDENCIES:
   - JAGPropertyConverter
   - OCMock
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JAGPropertyConverter
+    - OCMock
+
 SPEC CHECKSUMS:
   JAGPropertyConverter: ba70c5c249dfde354c4aeff02ff7e3f1163576a5
   OCMock: 2cd0716969bab32a2283ff3a46fd26a8c8b4c5e3
 
 PODFILE CHECKSUM: 7dab8f7e1638332fdf83664cfa140ac57b119cae
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.6.1

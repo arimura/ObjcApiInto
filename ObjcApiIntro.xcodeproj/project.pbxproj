@@ -25,6 +25,7 @@
 		7474BA701F2B0C3F0046EEF4 /* RuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7474BA6F1F2B0C3F0046EEF4 /* RuntimeTests.m */; };
 		747A0EC81FB93A1000A1B78A /* OCMockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 747A0EC71FB93A1000A1B78A /* OCMockTests.m */; };
 		74A44E3C1F2ADEB600177694 /* TypedefTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A44E3B1F2ADEB600177694 /* TypedefTests.m */; };
+		74BB4E832238F51C004BD98E /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BB4E822238F51C004BD98E /* WKWebViewController.m */; };
 		76DC6F9E1ECD4F040013ACA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6F9D1ECD4F040013ACA4 /* main.m */; };
 		76DC6FA11ECD4F040013ACA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FA01ECD4F040013ACA4 /* AppDelegate.m */; };
 		76DC6FA41ECD4F040013ACA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FA31ECD4F040013ACA4 /* ViewController.m */; };
@@ -77,6 +78,8 @@
 		7474BA6F1F2B0C3F0046EEF4 /* RuntimeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeTests.m; sourceTree = "<group>"; };
 		747A0EC71FB93A1000A1B78A /* OCMockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMockTests.m; sourceTree = "<group>"; };
 		74A44E3B1F2ADEB600177694 /* TypedefTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypedefTests.m; sourceTree = "<group>"; };
+		74BB4E812238F51C004BD98E /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		74BB4E822238F51C004BD98E /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		76DC6F991ECD4F040013ACA4 /* ObjcApiIntro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcApiIntro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DC6F9D1ECD4F040013ACA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		76DC6F9F1ECD4F040013ACA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -195,6 +198,8 @@
 				76DC6FD21ECD7EB70013ACA4 /* Hoge.swift */,
 				74523A0B1F1E52140072A571 /* LayoutSampleView.h */,
 				74523A0C1F1E52140072A571 /* LayoutSampleView.m */,
+				74BB4E812238F51C004BD98E /* WKWebViewController.h */,
+				74BB4E822238F51C004BD98E /* WKWebViewController.m */,
 				76DC6FA51ECD4F040013ACA4 /* Main.storyboard */,
 				76DC6FA81ECD4F040013ACA4 /* Assets.xcassets */,
 				76DC6FAA1ECD4F040013ACA4 /* LaunchScreen.storyboard */,
@@ -256,7 +261,6 @@
 				76DC6F961ECD4F040013ACA4 /* Frameworks */,
 				76DC6F971ECD4F040013ACA4 /* Resources */,
 				F83AD0636DABF26EA517C926 /* [CP] Embed Pods Frameworks */,
-				E2AAEE3E1B0DFA2F1DE80A85 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,7 +280,6 @@
 				76DC6FAF1ECD4F050013ACA4 /* Frameworks */,
 				76DC6FB01ECD4F050013ACA4 /* Resources */,
 				32106CB869548F38971F1C04 /* [CP] Embed Pods Frameworks */,
-				AACA6FEF6876ED21D30C4CDE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,8 +299,6 @@
 				76DC6FB91ECD4F050013ACA4 /* Sources */,
 				76DC6FBA1ECD4F050013ACA4 /* Frameworks */,
 				76DC6FBB1ECD4F050013ACA4 /* Resources */,
-				75E327486E2729FD6E8603B1 /* [CP] Embed Pods Frameworks */,
-				C06BE71D7B9A5F7DD0A0AB3C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -392,7 +393,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ObjcApiIntroTests/Pods-ObjcApiIntroTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ObjcApiIntroTests/Pods-ObjcApiIntroTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/OCMock/OCMock.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -401,7 +402,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjcApiIntroTests/Pods-ObjcApiIntroTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ObjcApiIntroTests/Pods-ObjcApiIntroTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4E4656F3367C542511E286CB /* [CP] Check Pods Manifest.lock */ = {
@@ -422,21 +423,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		75E327486E2729FD6E8603B1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjcApiIntroUITests/Pods-ObjcApiIntroUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A4AC5EE5F713D385DCE09FC4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,36 +439,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AACA6FEF6876ED21D30C4CDE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjcApiIntroTests/Pods-ObjcApiIntroTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C06BE71D7B9A5F7DD0A0AB3C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjcApiIntroUITests/Pods-ObjcApiIntroUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CDDB367CEED309DF0566865E /* [CP] Check Pods Manifest.lock */ = {
@@ -503,28 +459,13 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E2AAEE3E1B0DFA2F1DE80A85 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjcApiIntro/Pods-ObjcApiIntro-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F83AD0636DABF26EA517C926 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ObjcApiIntro/Pods-ObjcApiIntro-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ObjcApiIntro/Pods-ObjcApiIntro-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JAGPropertyConverter/JAGPropertyConverter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -533,7 +474,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjcApiIntro/Pods-ObjcApiIntro-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ObjcApiIntro/Pods-ObjcApiIntro-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -550,6 +491,7 @@
 				74523A0D1F1E52140072A571 /* LayoutSampleView.m in Sources */,
 				76DC6F9E1ECD4F040013ACA4 /* main.m in Sources */,
 				74523A0A1F1E153C0072A571 /* UIApiViewController.m in Sources */,
+				74BB4E832238F51C004BD98E /* WKWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
