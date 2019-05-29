@@ -25,6 +25,7 @@
 		7474BA701F2B0C3F0046EEF4 /* RuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7474BA6F1F2B0C3F0046EEF4 /* RuntimeTests.m */; };
 		747A0EC81FB93A1000A1B78A /* OCMockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 747A0EC71FB93A1000A1B78A /* OCMockTests.m */; };
 		74A44E3C1F2ADEB600177694 /* TypedefTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A44E3B1F2ADEB600177694 /* TypedefTests.m */; };
+		74B8CA86229E8DA6008856FB /* PointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B8CA85229E8DA6008856FB /* PointViewController.m */; };
 		74BB4E832238F51C004BD98E /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BB4E822238F51C004BD98E /* WKWebViewController.m */; };
 		76DC6F9E1ECD4F040013ACA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6F9D1ECD4F040013ACA4 /* main.m */; };
 		76DC6FA11ECD4F040013ACA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DC6FA01ECD4F040013ACA4 /* AppDelegate.m */; };
@@ -78,6 +79,8 @@
 		7474BA6F1F2B0C3F0046EEF4 /* RuntimeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeTests.m; sourceTree = "<group>"; };
 		747A0EC71FB93A1000A1B78A /* OCMockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMockTests.m; sourceTree = "<group>"; };
 		74A44E3B1F2ADEB600177694 /* TypedefTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypedefTests.m; sourceTree = "<group>"; };
+		74B8CA84229E8DA6008856FB /* PointViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointViewController.h; sourceTree = "<group>"; };
+		74B8CA85229E8DA6008856FB /* PointViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointViewController.m; sourceTree = "<group>"; };
 		74BB4E812238F51C004BD98E /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
 		74BB4E822238F51C004BD98E /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		76DC6F991ECD4F040013ACA4 /* ObjcApiIntro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcApiIntro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,6 +203,8 @@
 				74523A0C1F1E52140072A571 /* LayoutSampleView.m */,
 				74BB4E812238F51C004BD98E /* WKWebViewController.h */,
 				74BB4E822238F51C004BD98E /* WKWebViewController.m */,
+				74B8CA84229E8DA6008856FB /* PointViewController.h */,
+				74B8CA85229E8DA6008856FB /* PointViewController.m */,
 				76DC6FA51ECD4F040013ACA4 /* Main.storyboard */,
 				76DC6FA81ECD4F040013ACA4 /* Assets.xcassets */,
 				76DC6FAA1ECD4F040013ACA4 /* LaunchScreen.storyboard */,
@@ -484,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B8CA86229E8DA6008856FB /* PointViewController.m in Sources */,
 				76DC6FD31ECD7EB70013ACA4 /* Hoge.swift in Sources */,
 				76DC6FA41ECD4F040013ACA4 /* ViewController.m in Sources */,
 				76DC6FD71ECD8CD00013ACA4 /* HogeClient.m in Sources */,
