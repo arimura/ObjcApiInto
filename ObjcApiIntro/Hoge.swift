@@ -8,7 +8,7 @@
 import Foundation
 
 public class Hoge: NSObject {
-  public func getName() -> String {
+  @objc public func getName() -> String {
     return "Hoge"
   }
 }
