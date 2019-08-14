@@ -10,6 +10,7 @@
 		2E0345380F505DC62FD7924E /* Pods_ObjcApiIntroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3E7C0DC21EF4FDD991E1B0 /* Pods_ObjcApiIntroUITests.framework */; };
 		740D87DB1FA393CA009FA424 /* FunctionPointerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 740D87DA1FA393CA009FA424 /* FunctionPointerTests.m */; };
 		741A0EE02303A0A000D8098D /* CharSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741A0EDF2303A0A000D8098D /* CharSetTests.m */; };
+		741A0EE22303A88E00D8098D /* URLComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741A0EE12303A88E00D8098D /* URLComponentsTests.m */; };
 		741DFE02204E33AE005BF970 /* SqliteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741DFE01204E33AE005BF970 /* SqliteTests.m */; };
 		743892611F579CA300EBBEC6 /* DynamicTypingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 743892601F579CA300EBBEC6 /* DynamicTypingTest.m */; };
 		7438926D1F59BC3B00EBBEC6 /* KeyValueCodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7438926C1F59BC3B00EBBEC6 /* KeyValueCodingTests.m */; };
@@ -64,6 +65,7 @@
 		3FCAB5C2CE47921D718308CF /* Pods-ObjcApiIntro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcApiIntro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjcApiIntro/Pods-ObjcApiIntro.debug.xcconfig"; sourceTree = "<group>"; };
 		740D87DA1FA393CA009FA424 /* FunctionPointerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionPointerTests.m; sourceTree = "<group>"; };
 		741A0EDF2303A0A000D8098D /* CharSetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharSetTests.m; sourceTree = "<group>"; };
+		741A0EE12303A88E00D8098D /* URLComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLComponentsTests.m; sourceTree = "<group>"; };
 		741DFE01204E33AE005BF970 /* SqliteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqliteTests.m; sourceTree = "<group>"; };
 		743892601F579CA300EBBEC6 /* DynamicTypingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTypingTest.m; sourceTree = "<group>"; };
 		7438926C1F59BC3B00EBBEC6 /* KeyValueCodingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueCodingTests.m; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				741DFE01204E33AE005BF970 /* SqliteTests.m */,
 				744DA1DC22CCB5D1002FADFF /* ConditionalTests.m */,
 				741A0EDF2303A0A000D8098D /* CharSetTests.m */,
+				741A0EE12303A88E00D8098D /* URLComponentsTests.m */,
 			);
 			path = ObjcApiIntroTests;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 				744DA1DD22CCB5D1002FADFF /* ConditionalTests.m in Sources */,
 				743CB9CC1F2190310035EE71 /* PropertiesDumpTests.m in Sources */,
 				7474BA701F2B0C3F0046EEF4 /* RuntimeTests.m in Sources */,
+				741A0EE22303A88E00D8098D /* URLComponentsTests.m in Sources */,
 				74A44E3C1F2ADEB600177694 /* TypedefTests.m in Sources */,
 				743892611F579CA300EBBEC6 /* DynamicTypingTest.m in Sources */,
 				745A3C931F627A5A00FB1F03 /* BlockTests.m in Sources */,
