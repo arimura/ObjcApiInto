@@ -24,13 +24,14 @@
     self.webView.navigationDelegate = self;
     [self.view addSubview:self.webView];
     [self setupAnchor];
-    
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://google.com"]];
-    request.timeoutInterval = 1.0;
-    [self.webView loadRequest:request];
-        //webView:didFinishNavigation: mainのURLがロード完了
-        //webView:didFailProvisionalNavigation:withError: mainのURLがロード失敗
-        //webView:didFailNavigation:withError: ナビゲーション中にエラーが発生
+
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"wkwebview-sample" ofType:@"html"];
+    NSString *html = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    [self.webView loadHTMLString:html baseURL:nil];
+
+//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://google.com"]];
+//    request.timeoutInterval = 1.0;
+//    [self.webView loadRequest:request];
     
 }
 
@@ -41,16 +42,19 @@
     [self.webView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
 }
 
+
+#pragma mark - WKNavigationDelegate
 - (void)webView:(WKWebView *)webView
 decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction
 decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
+    NSLog(@"%@ %@", NSStringFromSelector(_cmd), navigationAction.request.mainDocumentURL);
     decisionHandler(WKNavigationActionPolicyAllow);
 }
 
 - (void)webView:(WKWebView *)webView
 decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse
 decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
-    NSLog(@"%@ %@", NSStringFromSelector(_cmd), navigationResponse.response);
+    NSLog(@"%@ %@", NSStringFromSelector(_cmd), navigationResponse.response.URL);
     decisionHandler(WKNavigationResponsePolicyAllow);
 }
 

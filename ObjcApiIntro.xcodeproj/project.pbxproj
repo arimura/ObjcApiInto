@@ -12,6 +12,7 @@
 		741A0EE02303A0A000D8098D /* CharSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741A0EDF2303A0A000D8098D /* CharSetTests.m */; };
 		741A0EE22303A88E00D8098D /* URLComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741A0EE12303A88E00D8098D /* URLComponentsTests.m */; };
 		741DFE02204E33AE005BF970 /* SqliteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741DFE01204E33AE005BF970 /* SqliteTests.m */; };
+		7427C8CC2313E75200C0F834 /* wkwebview-sample.html in Resources */ = {isa = PBXBuildFile; fileRef = 7427C8CB2313E75200C0F834 /* wkwebview-sample.html */; };
 		743892611F579CA300EBBEC6 /* DynamicTypingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 743892601F579CA300EBBEC6 /* DynamicTypingTest.m */; };
 		7438926D1F59BC3B00EBBEC6 /* KeyValueCodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7438926C1F59BC3B00EBBEC6 /* KeyValueCodingTests.m */; };
 		7438926F1F5CFDE000EBBEC6 /* MemoryManagementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7438926E1F5CFDE000EBBEC6 /* MemoryManagementTests.m */; };
@@ -67,6 +68,7 @@
 		741A0EDF2303A0A000D8098D /* CharSetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharSetTests.m; sourceTree = "<group>"; };
 		741A0EE12303A88E00D8098D /* URLComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLComponentsTests.m; sourceTree = "<group>"; };
 		741DFE01204E33AE005BF970 /* SqliteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqliteTests.m; sourceTree = "<group>"; };
+		7427C8CB2313E75200C0F834 /* wkwebview-sample.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "wkwebview-sample.html"; sourceTree = "<group>"; };
 		743892601F579CA300EBBEC6 /* DynamicTypingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTypingTest.m; sourceTree = "<group>"; };
 		7438926C1F59BC3B00EBBEC6 /* KeyValueCodingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueCodingTests.m; sourceTree = "<group>"; };
 		7438926E1F5CFDE000EBBEC6 /* MemoryManagementTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryManagementTests.m; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				76DC6FAA1ECD4F040013ACA4 /* LaunchScreen.storyboard */,
 				76DC6FAD1ECD4F040013ACA4 /* Info.plist */,
 				76DC6F9C1ECD4F040013ACA4 /* Supporting Files */,
+				7427C8CB2313E75200C0F834 /* wkwebview-sample.html */,
 			);
 			path = ObjcApiIntro;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 			files = (
 				76DC6FAC1ECD4F040013ACA4 /* LaunchScreen.storyboard in Resources */,
 				76DC6FA91ECD4F040013ACA4 /* Assets.xcassets in Resources */,
+				7427C8CC2313E75200C0F834 /* wkwebview-sample.html in Resources */,
 				76DC6FA71ECD4F040013ACA4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
