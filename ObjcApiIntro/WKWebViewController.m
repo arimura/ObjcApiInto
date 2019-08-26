@@ -50,7 +50,7 @@ decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
 - (void)webView:(WKWebView *)webView
 decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse
 decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
-    NSLog(@"%@", NSStringFromSelector(_cmd));
+    NSLog(@"%@ %@", NSStringFromSelector(_cmd), navigationResponse.response);
     decisionHandler(WKNavigationResponsePolicyAllow);
 }
 
