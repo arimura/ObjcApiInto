@@ -29,7 +29,7 @@
     NSString *html = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     [self.webView loadHTMLString:html baseURL:nil];
 
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://google.com"]];
+//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://www.example.com"]];
 //    request.timeoutInterval = 1.0;
 //    [self.webView loadRequest:request];
     
@@ -47,7 +47,7 @@
 - (void)webView:(WKWebView *)webView
 decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction
 decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
-    NSLog(@"%@ %@", NSStringFromSelector(_cmd), navigationAction.request.mainDocumentURL);
+    NSLog(@"%@ %@", NSStringFromSelector(_cmd), navigationAction.request.URL);
     decisionHandler(WKNavigationActionPolicyAllow);
 }
 
