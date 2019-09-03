@@ -25,13 +25,13 @@
     [self.view addSubview:self.webView];
     [self setupAnchor];
 
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"wkwebview-sample" ofType:@"html"];
-    NSString *html = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    [self.webView loadHTMLString:html baseURL:nil];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"wkwebview-sample" ofType:@"html"];
+//    NSString *html = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+//    [self.webView loadHTMLString:html baseURL:nil];
 
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://www.example.com"]];
-//    request.timeoutInterval = 1.0;
-//    [self.webView loadRequest:request];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.117.11:8000/wk-script-sleep.html"]];
+    request.timeoutInterval = 1.0;
+    [self.webView loadRequest:request];
     
 }
 
@@ -41,7 +41,6 @@
     [self.webView.topAnchor constraintEqualToAnchor:self.view.topAnchor].active = YES;
     [self.webView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
 }
-
 
 #pragma mark - WKNavigationDelegate
 - (void)webView:(WKWebView *)webView
@@ -54,7 +53,7 @@ decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
 - (void)webView:(WKWebView *)webView
 decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse
 decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
-    NSLog(@"%@ %@", NSStringFromSelector(_cmd), navigationResponse.response.URL);
+    NSLog(@"%@ %@ %ld", NSStringFromSelector(_cmd), navigationResponse.response.URL, ((NSHTTPURLResponse*)navigationResponse.response).statusCode);
     decisionHandler(WKNavigationResponsePolicyAllow);
 }
 
@@ -75,10 +74,10 @@ decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
 }
 
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error{
-    NSLog(@"%@", NSStringFromSelector(_cmd));
+    NSLog(@"%@ %@", NSStringFromSelector(_cmd), error);
 }
 
 - (void)webView:(WKWebView *)webView didFailNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error{
-    NSLog(@"%@", NSStringFromSelector(_cmd));
+    NSLog(@"%@ %@", NSStringFromSelector(_cmd), error);
 }
 @end
