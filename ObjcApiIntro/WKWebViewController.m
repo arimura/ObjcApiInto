@@ -8,7 +8,7 @@
 #import "WKWebViewController.h"
 @import WebKit;
 
-@interface WKWebViewController ()<WKNavigationDelegate>
+@interface WKWebViewController ()<WKNavigationDelegate, WKUIDelegate>
 @property (nonatomic) WKWebView *webView;
 @end
 
@@ -22,6 +22,7 @@
     self.webView.opaque = NO;
     self.webView.backgroundColor = [UIColor lightGrayColor];
     self.webView.navigationDelegate = self;
+    self.webView.UIDelegate = self;
     [self.view addSubview:self.webView];
     [self setupAnchor];
 
@@ -29,7 +30,7 @@
 //    NSString *html = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
 //    [self.webView loadHTMLString:html baseURL:nil];
 
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.117.11:8000/wk-script-sleep.html"]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.116.159:8080/open.html"]];
     request.timeoutInterval = 1.0;
     [self.webView loadRequest:request];
     
@@ -79,5 +80,44 @@ decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
 
 - (void)webView:(WKWebView *)webView didFailNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error{
     NSLog(@"%@ %@", NSStringFromSelector(_cmd), error);
+}
+
+
+#pragma mark - WKNavigationDelegate
+- (nullable WKWebView *)webView:(WKWebView *)webView
+ createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration
+            forNavigationAction:(WKNavigationAction *)navigationAction
+                 windowFeatures:(WKWindowFeatures *)windowFeatures {
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    return nil;
+}
+
+- (void)webViewDidClose:(WKWebView *)webView{
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+}
+
+- (void)webView:(WKWebView *)webView
+runJavaScriptAlertPanelWithMessage:(NSString *)message
+initiatedByFrame:(WKFrameInfo *)frame
+completionHandler:(void (^)(void))completionHandler{
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+
+}
+
+- (void)webView:(WKWebView *)webView
+runJavaScriptConfirmPanelWithMessage:(NSString *)message
+initiatedByFrame:(WKFrameInfo *)frame
+completionHandler:(void (^)(BOOL result))completionHandler{
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+
+}
+
+- (void)webView:(WKWebView *)webView
+runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt
+    defaultText:(nullable NSString *)defaultText
+initiatedByFrame:(WKFrameInfo *)frame
+completionHandler:(void (^)(NSString * _Nullable result))completionHandler{
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+
 }
 @end
