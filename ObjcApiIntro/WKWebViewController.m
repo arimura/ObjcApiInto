@@ -47,7 +47,7 @@
 - (void)webView:(WKWebView *)webView
 decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction
 decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
-    NSLog(@"%@ %@", NSStringFromSelector(_cmd), navigationAction.request.URL);
+    NSLog(@"%@ %@ %ld", NSStringFromSelector(_cmd), navigationAction.request.URL, navigationAction.navigationType);
     decisionHandler(WKNavigationActionPolicyAllow);
 }
 
@@ -83,7 +83,7 @@ decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
 }
 
 
-#pragma mark - WKNavigationDelegate
+#pragma mark - WKUIDelegate
 - (nullable WKWebView *)webView:(WKWebView *)webView
  createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration
             forNavigationAction:(WKNavigationAction *)navigationAction
