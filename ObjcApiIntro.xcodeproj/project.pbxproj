@@ -12,6 +12,7 @@
 		741A0EE02303A0A000D8098D /* CharSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741A0EDF2303A0A000D8098D /* CharSetTests.m */; };
 		741A0EE22303A88E00D8098D /* URLComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741A0EE12303A88E00D8098D /* URLComponentsTests.m */; };
 		741DFE02204E33AE005BF970 /* SqliteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741DFE01204E33AE005BF970 /* SqliteTests.m */; };
+		741EC77A2322714F009B7E9D /* NSFileManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741EC7792322714F009B7E9D /* NSFileManagerTests.m */; };
 		7427C8CC2313E75200C0F834 /* wkwebview-sample.html in Resources */ = {isa = PBXBuildFile; fileRef = 7427C8CB2313E75200C0F834 /* wkwebview-sample.html */; };
 		743892611F579CA300EBBEC6 /* DynamicTypingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 743892601F579CA300EBBEC6 /* DynamicTypingTest.m */; };
 		7438926D1F59BC3B00EBBEC6 /* KeyValueCodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7438926C1F59BC3B00EBBEC6 /* KeyValueCodingTests.m */; };
@@ -68,6 +69,7 @@
 		741A0EDF2303A0A000D8098D /* CharSetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharSetTests.m; sourceTree = "<group>"; };
 		741A0EE12303A88E00D8098D /* URLComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLComponentsTests.m; sourceTree = "<group>"; };
 		741DFE01204E33AE005BF970 /* SqliteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqliteTests.m; sourceTree = "<group>"; };
+		741EC7792322714F009B7E9D /* NSFileManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSFileManagerTests.m; sourceTree = "<group>"; };
 		7427C8CB2313E75200C0F834 /* wkwebview-sample.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "wkwebview-sample.html"; sourceTree = "<group>"; };
 		743892601F579CA300EBBEC6 /* DynamicTypingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTypingTest.m; sourceTree = "<group>"; };
 		7438926C1F59BC3B00EBBEC6 /* KeyValueCodingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueCodingTests.m; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				744DA1DC22CCB5D1002FADFF /* ConditionalTests.m */,
 				741A0EDF2303A0A000D8098D /* CharSetTests.m */,
 				741A0EE12303A88E00D8098D /* URLComponentsTests.m */,
+				741EC7792322714F009B7E9D /* NSFileManagerTests.m */,
 			);
 			path = ObjcApiIntroTests;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 			files = (
 				744C02331F71594A003AD004 /* CopyTests.m in Sources */,
 				740D87DB1FA393CA009FA424 /* FunctionPointerTests.m in Sources */,
+				741EC77A2322714F009B7E9D /* NSFileManagerTests.m in Sources */,
 				7474BA6E1F2AF0160046EEF4 /* EnumTests.m in Sources */,
 				747A0EC81FB93A1000A1B78A /* OCMockTests.m in Sources */,
 				744DA1DD22CCB5D1002FADFF /* ConditionalTests.m in Sources */,
