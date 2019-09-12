@@ -1,10 +1,17 @@
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     </head>
     <body>
-        <video autoplay playsinline loop width="250">
+        <video autoplay playsinline loop muted width="250" id="my-video">
             <source src="https://interactive-examples.mdn.mozilla.net/media/examples/flower.mp4" type="video/mp4">
         </video>
+        <script type="text/javascript">
+            const video = document.getElementById("my-video");
+            setInterval(() => {
+                console.log(video.currentTime);
+                window.webkit.messageHandlers.progress.postMessage(video.currentTime);
+            }, 1000);
+        </script>
     </body>
 </html>

@@ -8,7 +8,7 @@
 #import "WKWebView2Controller.h"
 @import WebKit;
 
-@interface WKWebView2Controller ()<WKNavigationDelegate, WKUIDelegate>
+@interface WKWebView2Controller ()<WKNavigationDelegate, WKUIDelegate, WKScriptMessageHandler>
 @property (nonatomic) WKWebView *webView;
 @end
 
@@ -20,6 +20,10 @@
     WKWebViewConfiguration *config = [WKWebViewConfiguration new];
     config.allowsInlineMediaPlayback = YES;
     config.mediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypeNone;
+
+    WKUserContentController *controller = [WKUserContentController new];
+    [controller addScriptMessageHandler:self name:@"progress"];
+    config.userContentController = controller;
 
     self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)
                                       configuration:config];
@@ -41,6 +45,13 @@
     [self.webView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = YES;
     [self.webView.topAnchor constraintEqualToAnchor:self.view.topAnchor].active = YES;
     [self.webView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
+}
+
+#pragma mark - WKScriptMessageHandler
+- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message{
+    if ([message.name isEqualToString:@"progress"]) {
+        NSLog(@"current head location: %@", message.body);
+    }
 }
 
 #pragma mark - WKNavigationDelegate
