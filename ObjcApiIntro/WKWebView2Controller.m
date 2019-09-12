@@ -1,23 +1,28 @@
 //
-//  WKWebViewController.m
+//  WKWebView2Controller.m
 //  ObjcApiIntro
 //
-//  Copyright © 2019年 hormiga6. All rights reserved.
+//  Copyright © 2019 hormiga6. All rights reserved.
 //
 
-#import "WKWebViewController.h"
+#import "WKWebView2Controller.h"
 @import WebKit;
 
-@interface WKWebViewController ()<WKNavigationDelegate, WKUIDelegate>
+@interface WKWebView2Controller ()<WKNavigationDelegate, WKUIDelegate>
 @property (nonatomic) WKWebView *webView;
 @end
 
-@implementation WKWebViewController
+@implementation WKWebView2Controller
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.webView = [WKWebView new];
+
+    WKWebViewConfiguration *config = [WKWebViewConfiguration new];
+    config.allowsInlineMediaPlayback = YES;
+    config.mediaTypesRequiringUserActionForPlayback = WKAudiovisualMediaTypeNone;
+
+    self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)
+                                      configuration:config];
     self.webView.translatesAutoresizingMaskIntoConstraints = NO;
     self.webView.opaque = NO;
     self.webView.backgroundColor = [UIColor lightGrayColor];
@@ -26,14 +31,9 @@
     [self.view addSubview:self.webView];
     [self setupAnchor];
 
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"wkwebview-sample" ofType:@"html"];
-//    NSString *html = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-//    [self.webView loadHTMLString:html baseURL:nil];
-
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.116.159:8080/open.html"]];
-    request.timeoutInterval = 1.0;
-    [self.webView loadRequest:request];
-
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"video" ofType:@"html"];
+    NSString *html = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    [self.webView loadHTMLString:html baseURL:nil];
 }
 
 - (void)setupAnchor{
@@ -101,7 +101,7 @@ runJavaScriptAlertPanelWithMessage:(NSString *)message
 initiatedByFrame:(WKFrameInfo *)frame
 completionHandler:(void (^)(void))completionHandler{
     NSLog(@"%@", NSStringFromSelector(_cmd));
-
+    
 }
 
 - (void)webView:(WKWebView *)webView
@@ -109,7 +109,7 @@ runJavaScriptConfirmPanelWithMessage:(NSString *)message
 initiatedByFrame:(WKFrameInfo *)frame
 completionHandler:(void (^)(BOOL result))completionHandler{
     NSLog(@"%@", NSStringFromSelector(_cmd));
-
+    
 }
 
 - (void)webView:(WKWebView *)webView
@@ -118,6 +118,7 @@ runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt
 initiatedByFrame:(WKFrameInfo *)frame
 completionHandler:(void (^)(NSString * _Nullable result))completionHandler{
     NSLog(@"%@", NSStringFromSelector(_cmd));
-
+    
 }
+
 @end
