@@ -27,6 +27,7 @@
 		743CB9C81F1F93080035EE71 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743CB9C71F1F93080035EE71 /* AVFoundation.framework */; };
 		743CB9CC1F2190310035EE71 /* PropertiesDumpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 743CB9CB1F2190310035EE71 /* PropertiesDumpTests.m */; };
 		744415BC1F26CFF300DE53A5 /* RequestOpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 744415BB1F26CFF300DE53A5 /* RequestOpTests.m */; };
+		744A5E2B25DBAE3500AF96F5 /* JSONTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 744A5E2A25DBAE3500AF96F5 /* JSONTests.m */; };
 		744C02331F71594A003AD004 /* CopyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 744C02321F71594A003AD004 /* CopyTests.m */; };
 		744DA1DD22CCB5D1002FADFF /* ConditionalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 744DA1DC22CCB5D1002FADFF /* ConditionalTests.m */; };
 		74523A0A1F1E153C0072A571 /* UIApiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74523A091F1E153C0072A571 /* UIApiViewController.m */; };
@@ -90,6 +91,7 @@
 		743CB9C71F1F93080035EE71 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		743CB9CB1F2190310035EE71 /* PropertiesDumpTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertiesDumpTests.m; sourceTree = "<group>"; };
 		744415BB1F26CFF300DE53A5 /* RequestOpTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestOpTests.m; sourceTree = "<group>"; };
+		744A5E2A25DBAE3500AF96F5 /* JSONTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONTests.m; sourceTree = "<group>"; };
 		744C02321F71594A003AD004 /* CopyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyTests.m; sourceTree = "<group>"; };
 		744DA1DC22CCB5D1002FADFF /* ConditionalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConditionalTests.m; sourceTree = "<group>"; };
 		74523A081F1E153C0072A571 /* UIApiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIApiViewController.h; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				741EC7792322714F009B7E9D /* NSFileManagerTests.m */,
 				743290D823C5C58100A0A621 /* NSURLSessionTests.m */,
 				7408C83B256F8E76006BFDCC /* DataTests.m */,
+				744A5E2A25DBAE3500AF96F5 /* JSONTests.m */,
 				7408C832256F8DE6006BFDCC /* data */,
 			);
 			path = ObjcApiIntroTests;
@@ -564,6 +567,7 @@
 				74A44E3C1F2ADEB600177694 /* TypedefTests.m in Sources */,
 				743892611F579CA300EBBEC6 /* DynamicTypingTest.m in Sources */,
 				745A3C931F627A5A00FB1F03 /* BlockTests.m in Sources */,
+				744A5E2B25DBAE3500AF96F5 /* JSONTests.m in Sources */,
 				743892731F5D472800EBBEC6 /* SortTests.m in Sources */,
 				7438926F1F5CFDE000EBBEC6 /* MemoryManagementTests.m in Sources */,
 				7438926D1F59BC3B00EBBEC6 /* KeyValueCodingTests.m in Sources */,
